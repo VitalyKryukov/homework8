@@ -9,3 +9,7 @@ if (FirstNumber < SecondNumber)
 {
     Console.Write("Первое число (" + FirstNumber + ") меньшее, второе число (" + SecondNumber + ") большее.");
 }
+else
+{
+    Console.Write("Первое число (" + FirstNumber + ") большее, второе число (" + SecondNumber + ") меньшее.");
+}
