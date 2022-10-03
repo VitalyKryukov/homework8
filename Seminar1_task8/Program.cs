@@ -33,12 +33,8 @@ if (number > 0)
     if (count % 2 == 0)
     {
         Console.Write(count + ", ");
-        count++;
-    } 
-    else
-    {
-        count++;
     }
+    count++;
     }
 }
 
@@ -49,12 +45,8 @@ else
     if (count % 2 == 0)
     {
         Console.Write(count + ", ");
-        count--;
-    } 
-    else
-    {
-        count--;
     }
+    count--;
     }
 }
 
