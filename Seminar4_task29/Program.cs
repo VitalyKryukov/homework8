@@ -9,13 +9,12 @@ void Main()
 {
     Console.Clear();
     Console.WriteLine("Start");
-    Console.WriteLine("Введите число: ");
     PrintArray(8);
     Console.WriteLine();
     Console.WriteLine("End");
 }
 
-void PrintArray(int size)//метод ввода массива
+void PrintArray(int size)//метод ввода и печати массива
 {
     int [] res = new int [size];
     Console.Write("[");

@@ -18,6 +18,16 @@ Main();
     Console.WriteLine("End");
 }*/
 
+void Main()
+{
+    Console.Clear();
+    Console.WriteLine("Start");
+    int A = 0, B = 0;
+    WriteVariable(ref A, ref B); // ref -- передаёт переменные по ссылке и работает непосредственно с ними (не с копией, как в обычном случае)
+    Console.WriteLine($"{A} в степени {B} = {MetodPow(A, B)}");
+    Console.WriteLine("End");
+}
+
 //Метод возведения числа A в степень B.
 int MetodPow(int number, int power)
 {
@@ -31,18 +41,8 @@ int MetodPow(int number, int power)
     return result; 
 }
 
-void Main()
-{
-    int A = 0, B = 0;
-    WriteVariable(ref A, ref B); // ref -- передаёт переменные по ссылке и работает непосредственно с ними (не с копией, как в обычном случае)
-    Console.WriteLine($"{A} в степени {B} = {MetodPow(A, B)}");
-    Console.WriteLine("End");
-}
-
 void WriteVariable(ref int A, ref int B)
 {
-    Console.Clear();
-    Console.WriteLine("Start");
     Console.WriteLine("Введите число A: ");
     A = int.Parse(Console.ReadLine());
     Console.WriteLine("Введите число B: ");
