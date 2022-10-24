@@ -5,7 +5,7 @@
 Console.Clear();
 
 Console.WriteLine("Введите число: ");
-int number = int.Parse(Console.ReadLine());
+int number = int.Parse(Console.ReadLine()!);
 int thirdDigit = Math.Abs(number);
 
 if(thirdDigit > 99)

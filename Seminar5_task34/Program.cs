@@ -14,7 +14,7 @@ void Main()
     Console.WriteLine("Полученный массив: ");
     PrintArray(array);
     Console.WriteLine();
-    Console.WriteLine($"Количество четных чисел в массиве = {evenNumbers(array)}");
+    Console.WriteLine($"Количество четных чисел в массиве = {EvenNumbers(array)}");
     Console.WriteLine("End");
 }
 
@@ -43,7 +43,7 @@ void PrintArray(int [] array)
     Console.Write("]");
 }
 
-int evenNumbers(int [] array)
+int EvenNumbers(int [] array)
 {
     int countEvenNum = 0;
     foreach(int el in array)

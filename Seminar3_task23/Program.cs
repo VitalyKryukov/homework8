@@ -5,7 +5,7 @@
 Console.Clear();
 
 Console.WriteLine("Введите число: ");
-int number = int.Parse(Console.ReadLine());
+int number = int.Parse(Console.ReadLine()!);
 double CubeNumber = 0;
 if(number > 0) //для положительных чисел
 {

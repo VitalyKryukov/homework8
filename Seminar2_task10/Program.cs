@@ -5,7 +5,7 @@
 Console.Clear();
 
 Console.WriteLine("Введите трёхзначное число: ");
-int number = int.Parse(Console.ReadLine());
+int number = int.Parse(Console.ReadLine()!);
 int secondDigit = Math.Abs(number);
 
 if(secondDigit < 1000 && secondDigit > 99)

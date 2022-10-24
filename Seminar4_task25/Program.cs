@@ -44,9 +44,9 @@ int MetodPow(int number, int power)
 void WriteVariable(ref int A, ref int B)
 {
     Console.WriteLine("Введите число A: ");
-    A = int.Parse(Console.ReadLine());
+    A = int.Parse(Console.ReadLine()!);
     Console.WriteLine("Введите число B: ");
-    B = int.Parse(Console.ReadLine());
+    B = int.Parse(Console.ReadLine()!);
 }
 
 

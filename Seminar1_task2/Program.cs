@@ -2,9 +2,9 @@
 Console.Clear();
 
 Console.WriteLine("Введите первое число: ");
-int FirstNumber = int.Parse(Console.ReadLine());
+int FirstNumber = int.Parse(Console.ReadLine()!);
 Console.WriteLine("Введите второе число: ");
-int SecondNumber = int.Parse(Console.ReadLine());
+int SecondNumber = int.Parse(Console.ReadLine()!);
 if (FirstNumber < SecondNumber)
 {
     Console.Write("Первое число (" + FirstNumber + ") меньшее, второе число (" + SecondNumber + ") большее.");

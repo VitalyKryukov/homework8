@@ -5,7 +5,7 @@
 Console.Clear();
 
 Console.WriteLine("Введите цифру дня недели: ");
-int number = int.Parse(Console.ReadLine());
+int number = int.Parse(Console.ReadLine()!);
 
 if(number > 0 && number < 8)
 {

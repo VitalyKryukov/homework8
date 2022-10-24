@@ -11,7 +11,7 @@ void Main()
     Console.Clear();
     Console.WriteLine("Start");
     Console.WriteLine("Введите число: ");
-    int number = int.Parse(Console.ReadLine());
+    int number = int.Parse(Console.ReadLine()!);
     Console.WriteLine($"Сумма цифр в числе {number} = {SumDigits(Math.Abs(number))}.");
     Console.WriteLine("End");
 }

@@ -2,7 +2,7 @@
 Console.Clear();
 
 Console.WriteLine("Введите число: ");
-int Number = int.Parse(Console.ReadLine());
+int Number = int.Parse(Console.ReadLine()!);
 //Вариант 1. С применением метода.
 // if (Math.Abs(Number) % 2 == 1)// Метод Math.Abs(-2) = 2 - решает проблему с отрицательными числами.
 // {

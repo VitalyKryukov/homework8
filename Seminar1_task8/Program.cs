@@ -2,7 +2,7 @@
 Console.Clear();
 
 Console.WriteLine("Введите число (N): ");
-int number = int.Parse(Console.ReadLine());
+int number = int.Parse(Console.ReadLine()!);
 
 //Вариант 1. Только для положительных чисел.
 // for (int count = 1; count <= number; count++)

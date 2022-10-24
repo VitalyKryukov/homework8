@@ -6,7 +6,7 @@
 Console.Clear();
 
 Console.WriteLine("Введите пятизначное число: ");
-int number = int.Parse(Console.ReadLine());
+int number = int.Parse(Console.ReadLine()!);
 int a1 = Math.Abs(number);//вводим для нахождения первых 3-х цифр
 
 if(Math.Abs(number) > 9999 && Math.Abs(number) < 100000)

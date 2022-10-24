@@ -10,13 +10,14 @@ void Main()
 {
     Console.Clear();
     Console.WriteLine("Start");
-    Console.WriteLine("Сколько чисел Вы планируете ввести: ");
-    int quantity = int.Parse(Console.ReadLine());
+    Console.WriteLine("Сколько чисел Вы планируете ввести?");
+    int quantity = int.Parse(Console.ReadLine()!);
     int[] array = ArrayNumbers(quantity);
     PrintArrayNumbers(array);
-    Console.WriteLine($"-> {CountPositiveNumbers(array)}");
+    Console.WriteLine($" -> {CountPositiveNumbers(array)}");
     Console.WriteLine("End");
 }
+
 
 int[] ArrayNumbers(int size)
 {
@@ -24,7 +25,14 @@ int[] ArrayNumbers(int size)
     int[] arrayM = new int[size];
     for (int i = 0; i < size; i++)
     {
+        try
+        {
         arrayM[i] = int.Parse(Console.ReadLine());
+        }
+        catch
+        {
+            Console.WriteLine("Введено некорректное значение!");
+        }
     }
     return arrayM;
 }
